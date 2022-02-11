@@ -20,7 +20,10 @@ class _MyAppState extends State<MyApp> {
           home: Builder(
             builder: (context) {
               ScreenUtil.setContext(context);
-              return const HomePage();
+              return const MediaQuery(
+                data: MediaQueryData(textScaleFactor: 1.0),
+                child: HomePage(),
+              );
             },
           ),
         );
