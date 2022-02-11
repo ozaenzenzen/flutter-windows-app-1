@@ -19,8 +19,11 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Container(
-        child: Text("Hai"),
+      body: SizedBox(
+        child: Text(
+          "Hai",
+          style: GoogleFonts.poppins(),
+        ),
       ),
     );
   }
