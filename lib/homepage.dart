@@ -19,7 +19,8 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.blueGrey,
       ),
-      body: SizedBox(
+      body: Container(
+        alignment: Alignment.center,
         child: Text(
           "Hai",
           style: GoogleFonts.poppins(),
