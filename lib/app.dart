@@ -17,7 +17,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       // designSize: const Size(360, 640), // mobile
-      designSize: const Size(1080, 1920), // desktop
+      // designSize: const Size(1080, 1920), // desktop HD
+      designSize: const Size(1280, 720), // desktop normal
+      
       builder: () {
         return FluentApp(
           home: Builder(
