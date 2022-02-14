@@ -1,4 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import 'package:flutter/material.dart' as material;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,16 +16,21 @@ class _HomePageFluentStyleState extends State<HomePageFluentStyle> {
     return ScaffoldPage(
       header: Container(
         color: Colors.teal,
-        height: 30,
+        height: 30.h,
       ),
       content: Container(
         alignment: Alignment.center,
-        child: Text(
-          "Hai",
-          style: GoogleFonts.poppins(
-            fontSize: 40.sp,
-            fontWeight: FontWeight.w700
-          ),
+        child: ListView.builder(
+          itemCount: 20,
+          itemBuilder: (context, index) {
+            return material.SelectableText(
+              "$index. Hai",
+              style: GoogleFonts.poppins(
+                fontSize: 40.sp,
+                fontWeight: FontWeight.w700
+              ),
+            );
+          }
         ),
       ),
       bottomBar: Container(
