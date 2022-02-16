@@ -37,7 +37,38 @@ class _SecondPageFluentStyleState extends State<SecondPageFluentStyle> {
       ),
       content: Container(
         alignment: Alignment.center,
-        child: Text("This is the second page"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("This is the second page"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  style: ButtonStyle(),
+                  child: Text(
+                    "This is fluent style",
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+                material.TextButton(
+                  style: material.TextButton.styleFrom(
+                    minimumSize: Size(100, 40),
+                  ),
+                  child: Text(
+                    "This is material style",
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
