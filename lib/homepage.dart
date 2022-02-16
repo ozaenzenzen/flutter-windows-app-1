@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         alignment: Alignment.center,
         child: Text(
-          "Hai",
+          "Ini Material Style",
           style: GoogleFonts.poppins(),
         ),
       ),
