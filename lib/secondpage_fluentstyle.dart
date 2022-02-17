@@ -41,7 +41,7 @@ class _SecondPageFluentStyleState extends State<SecondPageFluentStyle> {
           mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("This is the second page"),
+            Text("This is the second pages"),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
