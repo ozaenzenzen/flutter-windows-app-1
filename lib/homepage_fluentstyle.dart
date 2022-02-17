@@ -55,7 +55,7 @@ class _HomePageFluentStyleState extends State<HomePageFluentStyle> {
             );
           },
           child: Text(
-            "Go To Another Page",
+            "Go To Second Page",
             style: GoogleFonts.poppins(
               // fontSize: 15.sp,
               fontSize: 15,
