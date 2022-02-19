@@ -26,19 +26,30 @@ class _HomePageFluentStyleState extends State<HomePageFluentStyle> {
           ),
         ),
       ),
-      content: Container(
-        alignment: Alignment.center,
-        child: ListView.builder(
-            itemCount: 20,
-            itemBuilder: (context, index) {
-              return material.SelectableText(
-                "$index. Hai",
-                style: GoogleFonts.poppins(
-                  fontSize: 40,
-                  fontWeight: FontWeight.w700,
-                ),
-              );
-            }),
+      content: Row(
+        children: [
+          Container(
+            width: 100,
+            // height: ScreenUtil().screenHeight,
+            color: Colors.red,
+          ),
+          Expanded(
+            child: Container(
+              alignment: Alignment.center,
+              child: ListView.builder(
+                  itemCount: 20,
+                  itemBuilder: (context, index) {
+                    return material.SelectableText(
+                      "$index. Hai",
+                      style: GoogleFonts.poppins(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    );
+                  }),
+            ),
+          ),
+        ],
       ),
       bottomBar: Container(
         color: Colors.red,
